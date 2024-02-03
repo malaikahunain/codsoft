@@ -1,55 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <header>
-      <h1>Malaika Hunain</h1>
-      <p>Web Developer | Full Stack Developer</p>
-    </header>
-    <section id="about">
-        <img src="malaika.jpeg" style="width: 100; height: 100;" />
-    </section>
-    <section id="about1">
-      <h3>
-        Web development refers to the overall process of creating websites or web applications, including the project's design, layout, coding, content creation, and functionality.
-      </h3>
-    </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Project 1</h3>
-        <p>A landing page using HTML & CSS</p>
-        <img src="landing page.png" style="width: 700px; height: 500px;" />
-      </div>
-      <div class="project">
-        <h3>Project 2</h3>
-        <p>
-          A basic calculator using CSS, HTML, and JavaScript
-        </p>
-        <img src="calculator.png" style="width: 700px; height: 500px;" />
-      </div>
-      <div class="project">
-        <h3>Project 3</h3>
-        <p>Website for Labouratory Equipment and Chemicals</p>
-        <img src="FYP.png" style="width: 700px; height: 500px;" />
-      </div>
-    </section>
-    <section id="resume">
-      <h2>Resume</h2>
-      <p><a href="MALAIKA.docx" download> Download Resume </a></p>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: malaikahunain2003@gmail.com</p>
-      <p>Phone: 0322-0000000</p>
-    </section>
-    <footer>
-      Copyright &copy; 2024 Landing Page. All Rights Reserved Designed by Malaika Hunain
-    </footer>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="setOperation('+')">+</button>
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="setOperation('-')">-</button>
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="setOperation('*')">*</button>
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="setOperation('/')">/</button>
+        </div>
+    </div>
+   <script src="script.js"></script>
+</body>
 </html>
